@@ -38,6 +38,9 @@ func CreateBuilder(n *ast.TypeSpec) []byte {
 	b.WriteString("\n\n")
 
 	for _, fld := range s.Fields.List {
+		if len(fld.Names) == 0 {
+			continue
+		}
 		fn := fld.Names[0].Name
 		ty, ok := fld.Type.(*ast.Ident)
 
