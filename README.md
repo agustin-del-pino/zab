@@ -6,7 +6,7 @@ Generates a Zero Alloc Builder from structs within golang files.
 # Download
 
 ````shell
-go install github.com/agustin-del-pino/zab/cmd
+go install github.com/agustin-del-pino/zab/cmd/zab@latest
 ````
 
 # Overview
